@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sentinel-security-productions/Sentinel#readme",
   "dependencies": {
+    "@prisma/client": "^7.8.0",
     "@nestjs/typeorm": "^11.0.1",
     "@types/node": "^25.9.3",
     "@types/react": "^19.2.17",
@@ -26,5 +27,8 @@
     "react": "^19.2.7",
     "typeorm": "^1.0.0",
     "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "prisma": "^7.8.0"
   }
 }
