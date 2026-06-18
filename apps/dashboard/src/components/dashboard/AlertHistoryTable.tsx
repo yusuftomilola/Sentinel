@@ -67,8 +67,7 @@ export function AlertHistoryTable({ events = mockEvents }: Props) {
 
   const uniqueChains = ['All', ...Array.from(new Set(events.map(e => e.chain)))];
 
-  const filtered =
-    filterChain === 'All' ? events : events.filter(e => e.chain === filterChain);
+  const filtered = filterChain === 'All' ? events : events.filter(e => e.chain === filterChain);
 
   return (
     <div className="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden">
@@ -133,10 +132,7 @@ export function AlertHistoryTable({ events = mockEvents }: Props) {
           <tbody className="divide-y divide-gray-800/60">
             {filtered.length > 0 ? (
               filtered.map(event => (
-                <tr
-                  key={event.id}
-                  className="hover:bg-gray-800/40 transition-colors"
-                >
+                <tr key={event.id} className="hover:bg-gray-800/40 transition-colors">
                   <td className="px-6 py-4 text-gray-400 font-mono text-xs whitespace-nowrap">
                     {event.timestamp}
                   </td>

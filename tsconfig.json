@@ -14,8 +14,6 @@
     "outDir": "./dist",
     "rootDir": "./",
     "baseUrl": "./",
-    "types": ["node", "jest"],
-    "ignoreDeprecations": "6.0",
     "paths": {
       "@common/*": ["apps/backend/src/common/*"],
       "@modules/*": ["apps/backend/src/modules/*"],

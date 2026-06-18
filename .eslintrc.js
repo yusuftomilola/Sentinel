@@ -17,12 +17,7 @@ module.exports = {
   ignorePatterns: [
     '.eslintrc.js',
     'dist/**',
-    'apps/dashboard/src/app/**',
-    'apps/dashboard/src/components/layout/**',
-    'apps/dashboard/src/components/dashboard/**',
-    'apps/dashboard/next.config.ts',
-    'apps/dashboard/tailwind.config.ts',
-    'apps/dashboard/postcss.config.js',
+    'apps/dashboard/**',
   ],
   rules: {
     '@typescript-eslint/interface-name-prefix': 'off',
@@ -40,18 +35,6 @@ module.exports = {
       },
       rules: {
         '@typescript-eslint/no-require-imports': 'off',
-      },
-    },
-    {
-      // Legacy dashboard components (pre-Next.js) — lint without type-aware rules
-      // since they are excluded from the root tsconfig include paths.
-      files: [
-        'apps/dashboard/src/components/*.tsx',
-        'apps/dashboard/src/components/*.ts',
-        'apps/dashboard/src/global.d.ts',
-      ],
-      parserOptions: {
-        project: null,
       },
     },
   ],
